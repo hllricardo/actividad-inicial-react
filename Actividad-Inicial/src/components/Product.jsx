@@ -1,4 +1,10 @@
-function Product ({id, name, price, imageUrl, description, category}) {
+function Product ({id, name, price, imageUrl, description, category, addToShoppingCart}) {
+    
+    function handleAddToCart(){
+        addToShoppingCart({id, name, price, imageUrl, description, category});
+        console.log("Producto añadido al carrito");
+    }
+    
     return (
         <div key={id} className="item">
             <h3 className="item-name">{name}</h3>
@@ -8,6 +14,7 @@ function Product ({id, name, price, imageUrl, description, category}) {
             </div>
             <p className="item-description">{description}</p>
             <p className="item-category">{category}</p>
+            <button onClick={handleAddToCart}>Añadir al carrito</button>
         </div>
     )
 }

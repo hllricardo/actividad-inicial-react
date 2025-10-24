@@ -53,6 +53,14 @@ Header{
     width: 90%;
     background-color: rgb(218, 211, 201);
 }
+.item button{
+    background-color: rgb(22, 137, 141);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
 .item-image{
     width: 250px;
@@ -69,6 +77,37 @@ Footer{
     padding: 10px 0;
 }
 
+.btn-cart{
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    background-color: rgb(22, 137, 141);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.btn-cart:hover{
+    background-color: rgb(18, 112, 115);
+}
+
+.shopping-cart{
+    position: fixed;
+    bottom: 450px;
+    right: 30px;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: white;
+    border: 2px solid rgb(22, 137, 141);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 @media only screen and (max-width: 1700px) {
     .boxProducts{
     grid-template-columns: auto auto auto;
@@ -83,4 +122,8 @@ Footer{
     .boxProducts{
     grid-template-columns: auto;
     }
+}
+
+.none{
+    display: none;
 }
