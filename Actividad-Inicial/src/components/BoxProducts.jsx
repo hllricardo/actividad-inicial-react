@@ -31,6 +31,8 @@ function BoxProducts() {
       <ShoppingCart
         showCart={showCart}
         onHideCart={() => setShowCart(false)}
+        onDeleteItem={removeFromCart}
+        listitemsCart={shoppingCart}
       />
       
     </main>

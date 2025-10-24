@@ -96,8 +96,8 @@ Footer{
 
 .shopping-cart{
     position: fixed;
-    bottom: 450px;
-    right: 30px;
+    bottom: 100px;
+    right: 400px;
     width: 300px;
     max-height: 400px;
     overflow-y: auto;
