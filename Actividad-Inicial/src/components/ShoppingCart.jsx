@@ -41,8 +41,6 @@ function ShoppingCart({
             </div>
 
             <div className="price-total">
-                <p>Total: </p>
-                <p></p>
             </div>
         </div>
     )
