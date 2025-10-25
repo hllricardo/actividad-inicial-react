@@ -25,7 +25,7 @@ function ShoppingCart({
                     <div className="cart-item" key={`${item.id}-${index}`}>
                         <img src={item.imageUrl} alt={item.name} />
                         <div className="cart-item-details">
-                            <span> {item.name} </span>
+                            <p> {item.name} </p>
                             <span> {item.category} </span>
                             <p> {item.description} </p>
                             <span> ${item.price} </span>

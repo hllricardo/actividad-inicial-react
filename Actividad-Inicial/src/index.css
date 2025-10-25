@@ -77,6 +77,7 @@ Footer{
     padding: 10px 0;
 }
 
+/*boton del carrito de la compra*/
 .btn-cart{
     position: fixed;
     bottom: 80px;
@@ -94,12 +95,13 @@ Footer{
     background-color: rgb(18, 112, 115);
 }
 
+/*Estilos de la ventana del carrito de la compra*/
 .shopping-cart{
     position: fixed;
     bottom: 100px;
     right: 400px;
-    width: 300px;
-    max-height: 400px;
+    width: 500px;
+    height: 400px;
     overflow-y: auto;
     background-color: white;
     border: 2px solid rgb(22, 137, 141);
@@ -107,6 +109,51 @@ Footer{
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/*Estilos del contenido de carrito de la compra*/
+.cart-content{
+    background-color: white;
+    padding: 24px 28px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    
+    overflow: hidden;
+}
+.btn-close-cart{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+}
+.cart-content{
+    padding: 24px 28px;
+    border-radius: 18px;
+    width: min(420px, 90%);
+    max-height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.cart-item img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
 
 @media only screen and (max-width: 1700px) {
     .boxProducts{
