@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: whitesmoke;
 }
-Header{
+
+Header {
     position: fixed;
     color: white;
     background-color: rgb(22, 137, 141);
@@ -15,15 +17,17 @@ Header{
     text-align: center;
     padding: 10px 0;
 }
-.boxProducts{
+
+.boxProducts {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: center;
     margin-top: 80px;
     margin-bottom: 60px;
-   
+
 }
-.item{
+
+.item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +39,7 @@ Header{
     background-color: rgb(133, 99, 36);
 }
 
-.item h3{
+.item h3 {
     border: 1px solid lightgray;
     width: 90%;
     border-radius: 10px;
@@ -43,7 +47,7 @@ Header{
     background-color: rgb(218, 211, 201);
 }
 
-.item p{
+.item p {
     border-radius: 10px;
     padding: 10px;
     border: 1px solid lightgray;
@@ -53,7 +57,8 @@ Header{
     width: 90%;
     background-color: rgb(218, 211, 201);
 }
-.item button{
+
+.item button {
     background-color: rgb(22, 137, 141);
     color: white;
     border: none;
@@ -62,12 +67,12 @@ Header{
     cursor: pointer;
 }
 
-.item-image{
+.item-image {
     width: 250px;
     height: 250px;
 }
 
-Footer{
+Footer {
     color: white;
     background-color: rgb(22, 137, 141);
     position: fixed;
@@ -78,7 +83,7 @@ Footer{
 }
 
 /*boton del carrito de la compra*/
-.btn-cart{
+.btn-cart {
     position: fixed;
     bottom: 80px;
     right: 30px;
@@ -91,15 +96,14 @@ Footer{
     font-size: 30px;
     cursor: pointer;
 }
-.btn-cart:hover{
+
+.btn-cart:hover {
     background-color: rgb(18, 112, 115);
 }
 
 /*Estilos de la ventana del carrito de la compra*/
-.shopping-cart{
+.shopping-cart {
     position: fixed;
-    bottom: 100px;
-    right: 400px;
     width: 500px;
     height: 400px;
     overflow-y: auto;
@@ -107,12 +111,17 @@ Footer{
     border: 2px solid rgb(22, 137, 141);
     border-radius: 10px;
     padding: 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*Estilos del contenido de carrito de la compra*/
-.cart-content{
+.cart-content {
     background-color: white;
-    
     height: 300px;
     padding: 24px 28px;
     border-radius: 18px;
@@ -122,7 +131,8 @@ Footer{
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
     overflow-y: auto;
 }
-.btn-close-cart{
+
+.btn-close-cart {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -132,7 +142,8 @@ Footer{
     cursor: pointer;
     color: #888;
 }
-.cart-content{
+
+.cart-content {
     padding: 24px 28px;
     border-radius: 18px;
     width: min(420px, 90%);
@@ -140,13 +151,16 @@ Footer{
     display: flex;
     flex-direction: column;
 }
-.cart-item{
+
+.cart-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
+    gap: 10px;
 }
-.cart-item img{
+
+.cart-item img {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -156,21 +170,23 @@ Footer{
 
 
 @media only screen and (max-width: 1700px) {
-    .boxProducts{
-    grid-template-columns: auto auto auto;
-    }
-}
-@media only screen and (max-width: 1200px) {
-    .boxProducts{
-    grid-template-columns: auto auto;
-    }
-}
-@media only screen and (max-width: 900px) {
-    .boxProducts{
-    grid-template-columns: auto;
+    .boxProducts {
+        grid-template-columns: auto auto auto;
     }
 }
 
-.none{
+@media only screen and (max-width: 1200px) {
+    .boxProducts {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .boxProducts {
+        grid-template-columns: auto;
+    }
+}
+
+.none {
     display: none;
 }
